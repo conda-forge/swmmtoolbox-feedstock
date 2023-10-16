@@ -25,7 +25,6 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - toolbox_utils >=5.0.0,<6.0.0
     - cltoolbox >=1.0.0
 
 test:
