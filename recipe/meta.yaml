@@ -1,5 +1,5 @@
 {% set name = "swmmtoolbox" %}
-{% set version = "4.0.8" %}
+{% set version = "4.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/swmmtoolbox-{{ version }}.tar.gz
-  sha256: 962d2b4bc7df83796577cb93053365dd0819b4a5091ef098a265ffe601af1ac0
+  sha256: 2bcf39659566044481a4911b09a939d28e90bf9bd2c8a63699dfa34552da8dc1
 
 build:
   entry_points:
@@ -25,8 +25,23 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - toolbox_utils >=5.0.0,<6.0.0
     - cltoolbox >=1.0.0
+    - dateparser
+    - tabulate
+    - numpy
+    - scipy
+    - pandas
+    - pint-pandas
+    - pint !=0.21
+    - pydantic
+    - typing-extensions
+    - odfpy >=1.4.1
+    - xlrd >=2.0.1
+    - openpyxl >=3.0.7
+    - pyxlsb >=1.0.8
+    - pytables >=3.6.1
+    - matplotlib-base >=3.3.2
+    - xlsxwriter
 
 test:
   imports:
