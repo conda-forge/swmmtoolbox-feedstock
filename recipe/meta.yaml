@@ -1,5 +1,5 @@
 {% set name = "swmmtoolbox" %}
-{% set version = "4.0.10" %}
+{% set version = "4.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/swmmtoolbox-{{ version }}.tar.gz
-  sha256: 2bcf39659566044481a4911b09a939d28e90bf9bd2c8a63699dfa34552da8dc1
+  sha256: 7d6e0a298e11967f079ec36f6d1264d06954daadca6863fe944e2f070a3a9408
 
 build:
   entry_points:
